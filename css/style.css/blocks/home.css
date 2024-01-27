@@ -4,7 +4,12 @@
 
 .home__content {
   max-width: 653px;
+  position: relative;
 }
+
+
+
+
 
 .home__title {
   font-size: 36px;
@@ -23,11 +28,15 @@
 .home__text {
   width: 469px;
   height: 76px;
+  font-weight: 600;
 }
 
 .home__img {
   max-width: 855px;
-  min-height: 569px;
+  max-height: 569px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
 }
 
 @media (width < 1280px) {
@@ -37,14 +46,12 @@
     position: relative;
   }
 
-  .home__content {
-    position: relative;
-  }
+ 
 
   .home__title {
     font-size: 24px;
     font-weight: 700;
-    margin-top: 41px;
+    margin-top: 31px;
     height: 29px;
     margin-bottom: 21px;
   }
@@ -57,7 +64,7 @@
   }
 
   .home__text {
-    max-width: 287px;
+    max-width: 273px;
     height: 96px;
     font-size: 12px;
   }
@@ -73,28 +80,54 @@
 }
 
 @media (width < 768px) {
+ 
+
+  .home__container {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .home__btn {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
   .home__title {
     font-size: 18px;
 
     margin-top: 21px;
 
-    margin-bottom: 274px;
+    margin-bottom: 220px;
+  
   }
 
   .home__desc {
     height: 45px;
     font-size: 12px;
     margin-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 345px; */
+    /* text-align: start; */
   }
 
   .home__text {
     height: 96px;
     font-size: 12px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home__img {
     height: 299px;
+    margin-bottom: 29px;
+    margin-top: 20px;
   }
 }
